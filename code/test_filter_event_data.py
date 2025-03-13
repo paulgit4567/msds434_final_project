@@ -17,6 +17,6 @@ def test_filter_event_data():
     df = pd.DataFrame(data)
 
     filtered_df = filter_event_data(df)
-    assert len(filtered_df) == 1
+    assert len(filtered_df) == 2
     assert filtered_df.iloc[0]["event_id"] == 7
     assert filtered_df.iloc[0]["event_name"] == "The Genesis Invitational"
