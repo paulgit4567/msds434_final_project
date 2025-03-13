@@ -17,9 +17,10 @@ jobs:
 
       - name: install packages
         run: |
-          pip install --upgrade pip
-          pip install pytest
+          python -m pip install --upgrade pip
+          pip install pytest pandas
 
-      - name: tests
+      - name: run tests
         run: |
+          cd code
           pytest
