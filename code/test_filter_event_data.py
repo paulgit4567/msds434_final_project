@@ -1,5 +1,5 @@
 import pandas as pd
-from .filter_for_pga_sg_and_stats import filter_event_data
+from code.filter_for_pga_sg_and_stats import filter_event_data
 
 def test_filter_event_data():
 
