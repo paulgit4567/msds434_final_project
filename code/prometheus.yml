@@ -1,0 +1,18 @@
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]
+
+
+  - job_name: predictions_counter
+    static_configs:
+      - targets: [ "localhost:5000" ]
+
+
+
+# https://blog.viktoradam.net/2020/05/11/prometheus-flask-exporter/
+# target port :5000 for the flask server
+# can't have second scrape configs
+# scrape_configs:
